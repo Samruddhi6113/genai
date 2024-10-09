@@ -3,11 +3,12 @@ body {
     background-color: #f0f2f5; /* Light gray background */
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 .container {
-    max-width: 1000px; /* Increased width */
-    margin: 0 auto;
+    max-width: 1000px; /* Increased width of the outer container */
+    margin: 0 auto; /* Center the container */
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -21,19 +22,26 @@ h1 {
     font-size: 2.5em;
 }
 
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden; /* Rounded corners for table */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 th, td {
-    padding: 12px 15px; /* Increased padding */
-    text-align: left;
+    padding: 11px 14px; /* Reduced padding */
+    text-align: center;
     border-bottom: 1px solid #ddd;
     transition: background-color 0.3s; /* Smooth background transition */
+    text-align: center;
 }
 
 th {
@@ -51,13 +59,18 @@ tr:hover {
 }
 
 td {
-    font-size: 1.1em; /* Slightly larger font size for better readability */
+    font-size: 1em; /* Adjusted font size for better readability */
 }
 
+/* Specific width and min-width for the Rank column */
 td:nth-child(1) {
+    width: 50px;     /* Set width for Rank column */
+    min-width: 50px; /* Ensure a minimum width for visibility */
     font-weight: bold; /* Bold rank */
     color: #007BFF; /* Blue for rank */
+    text-align: center; /* Center align the rank text */
 }
+
 
 .container:before {
     content: "";
@@ -67,16 +80,17 @@ td:nth-child(1) {
     margin-bottom: 20px;
 }
 
-footer {
+.footer {
     text-align: center;
     margin-top: 20px;
     color: #666;
+    font-size: 0.9em; /* Smaller footer text */
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .container {
-        max-width: 90%; /* Decrease width for smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
     }
 
     h1 {
@@ -84,6 +98,12 @@ footer {
     }
 
     td {
-        font-size: 1em; /* Adjust table text size */
+        font-size: 0.9em; /* Adjust table text size */
     }
 }
+
+
+
+
+
+
