@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px; /* Increased width */
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for contrast */
+    font-size: 2.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Rounded corners for table */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px; /* Increased padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+th {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #f9f9f9; /* Light gray for rows */
+}
+
+tr:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+td {
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+td:nth-child(1) {
+    font-weight: bold; /* Bold rank */
+    color: #007BFF; /* Blue for rank */
+}
+
+.container:before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 0.7) 50%, rgba(0, 123, 255, 0) 100%); /* Gradient effect */
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Decrease width for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    td {
+        font-size: 1em; /* Adjust table text size */
+    }
+}
